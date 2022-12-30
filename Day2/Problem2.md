@@ -1,9 +1,13 @@
 # Problem 2
 ## Create react app docker container "using single stage, Multi-Stage Dockerfile"
-
+---
+---
+# Still didn't do the multi stage
+---
+---
 # Dockerfile
 ```Docker
-FFROM node:18.12.1
+FROM node:18.12.1
 RUN apt-get update
 #installing nodejs ( it should include npm by default)
 RUN apt-get install -y nodejs
