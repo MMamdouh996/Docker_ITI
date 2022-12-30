@@ -1,26 +1,26 @@
-Problem 1
-1-Run the container hello-world
+# Problem 1
+### 1. Run the container hello-world
 ```bash
 $ sudo docker run hello-world
 ```
----
-2-Check the container state
+
+### 2. Check the container state
 ```bash
 $ sudo docker ps -a
 ```
----
-3-start the stopped container
+
+### 3. start the stopped container
 ```bash
 $ sudo docker ps -a
 $ sudo docker start ebad #ebad is the id of the container
 ```
----
-4-remove the container
+
+### 4. remove the container
 ```bash
 $ sudo docker rm ebad #ebad is the id of the container
 ```
----
-5-remove the image
+
+### 5. remove the image
 ```bash
 $ sudo docker image ls
 $ sudo docker rmi feb5 #feb5 is the id of the image
@@ -30,4 +30,4 @@ $ sudo docker rmi feb5
 $ sudo docker image ls
 
 ```
----
+
