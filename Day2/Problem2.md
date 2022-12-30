@@ -2,7 +2,7 @@
 ## Create react app docker container "using single stage, Multi-Stage Dockerfile"
 ---
 ---
-# Still didn't do the multi stage
+## The Multi Stage Dockerfile
 ```Docker
 FROM node:18.12.1 AS buildalias
 RUN apt-get update
@@ -32,6 +32,7 @@ EXPOSE 80
 ENTRYPOINT [ "nginx" , "-g" , "daemon off;" ]
 ```
 ---
+## Single Stage Dockerfile
 ---
 # Dockerfile
 ```Docker

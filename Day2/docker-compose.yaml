@@ -1,0 +1,17 @@
+# FROM node:18.12.1 AS buildalias
+# RUN npm i -g create-react-app
+# RUN create-react-app fanapp
+# WORKDIR /fanapp
+
+# FROM nginx:alpine
+# COPY --from=buildalias /fanapp /usr/share/nginx/html
+# EXPOSE 80
+# ENTRYPOINT [ "nginx" , "-g" , "daemon off;" ]
+
+
+version: '3.8'
+services:
+    multistage:
+      build: .
+      ports:
+        - "8020:80"

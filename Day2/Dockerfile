@@ -49,12 +49,7 @@ RUN npm i -g create-react-app
 #to create react app we run "create-react-app <app_name>"
 RUN create-react-app fanapp
 WORKDIR /fanapp
-RUN ls
-# CMD npm start
-# CMD [ "npm","start" ]
-# the line below will run the app and put it inside dir called build
-# RUN npm run fanapp
-# RUN npm start
+# RUN ls # just for debugging
 
 FROM nginx:alpine
 COPY --from=buildalias /fanapp /usr/share/nginx/html
