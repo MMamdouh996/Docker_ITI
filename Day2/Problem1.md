@@ -15,7 +15,5 @@ Dockerfile :
 ```bash
 $ sudo docker build -t ubuntu:22.04nX .
 $ sudo docker run -it -p 8099:80 ubuntu:22.04nX #i can access localhost:8099 from my local machine now
-
-
-
 ```
+
